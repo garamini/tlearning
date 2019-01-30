@@ -9,12 +9,15 @@ l.labels = [
     {label :'అక్షరాలూ',value :'aksharalu'},
     {label :'గుణింతాలు', value :'gunintalu'},
     {label :'వొత్తులు', value : 'vattulu'},
-    {label :'Alphabets', value : 'english'},
+    {label :'Upper Letters', value : 'english'},
+    {label :'Lower Letters', value : 'lowerLetters'},
 ]
 
 l.alphabets = {
     english :  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
                 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
+    lowerLetters : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 
+                    'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     aksharalu : ['అ', 'ఆ', 'ఇ', 'ఈ', 'ఉ', 'ఊ', 'ఋ', 'ౠ', 'ఏ', 'ఐ', 'ఒ', 'ఓ', 'ఔ', 'ం', 'ః',
                  'క','ఖ','గ','ఘ','ఙ','చ','ఛ','జ','ఝ','ఞ','ట','ఠ','డ','ఢ',
                  'ణ','త','థ','ద','ధ','న','ప','ఫ','బ','భ','మ','య','ర','ల',
