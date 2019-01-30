@@ -9,8 +9,8 @@ l.labels = [
     {label :'అక్షరాలూ',value :'aksharalu'},
     {label :'గుణింతాలు', value :'gunintalu'},
     {label :'వొత్తులు', value : 'vattulu'},
-    {label :'Upper Letters', value : 'english'},
-    {label :'Lower Letters', value : 'lowerLetters'},
+    {label :'Upper Case', value : 'english'},
+    {label :'Lower Case', value : 'lowerLetters'},
 ]
 
 l.alphabets = {
