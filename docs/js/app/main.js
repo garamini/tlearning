@@ -9,8 +9,8 @@ l.labels = [
     {label :'అక్షరాలూ',value :'aksharalu'},
     {label :'గుణింతాలు', value :'gunintalu'},
     {label :'వొత్తులు', value : 'vattulu'},
-    {label :'Upper Case', value : 'english'},
     {label :'Lower Case', value : 'lowerLetters'},
+    {label :'Upper Case', value : 'english'}
 ]
 
 l.alphabets = {
@@ -22,7 +22,7 @@ l.alphabets = {
                  'క','ఖ','గ','ఘ','ఙ','చ','ఛ','జ','ఝ','ఞ','ట','ఠ','డ','ఢ',
                  'ణ','త','థ','ద','ధ','న','ప','ఫ','బ','భ','మ','య','ర','ల',
                  'వ','శ','ష','స','హ','ళ','క్ష','ఱ'],
-    guninthalu :['ా', 'ి', 'ీ', 'ు', 'ూ', 'ృ', 'ౄ', 'ె', 'ే', 'ై', 'ొ', 'ో', 'ౌ', 'ం', 'ః'],
+    gunintalu :['ా', 'ి', 'ీ', 'ు', 'ూ', 'ృ', 'ౄ', 'ె', 'ే', 'ై', 'ొ', 'ో', 'ౌ', 'ం', 'ః'],
     vattulu : ['్క', '్ఖ', '్గ', '్ఘ', '్ఙ', '్చ', '్ఛ', '్జ', '్ఝ', '్ఞ', '్ట', '్ఠ', '్డ', '్ఢ', '్ణ', '్త', '్థ', 
                 '్ద', '్ధ', '్న', '్ప', '్ఫ', '్బ', '్భ', '్మ', '్య', '్ర', '్ల', '్వ', '్శ', '్ష', '్స', '్హ', '్ళ', '్ఱ'],
     test :  [' ై'],
@@ -96,17 +96,7 @@ l.setHeadings = function(t){
 
 l.setLetterCollection = function(selection){
     l.selectedOption = selection;
-    if (selection.value === 'aksharalu') {
-        l.lettersCollection = l.alphabets.aksharalu;
-    } else if(selection.value === 'gunintalu'){
-        l.lettersCollection = l.alphabets.guninthalu;
-    } else if(selection.value === 'vattulu'){
-        l.lettersCollection = l.alphabets.vattulu;
-    } else if(selection.value === 'lowerLetters'){
-        l.lettersCollection = l.alphabets.lowerLetters;
-    } else {
-        l.lettersCollection = l.alphabets.english;    
-    }
+    l.lettersCollection = l.alphabets[selection.value];
     l.maxLetters = l.lettersCollection.length- 1;
     l.reset();
 }
