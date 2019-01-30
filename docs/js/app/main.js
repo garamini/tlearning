@@ -102,6 +102,8 @@ l.setLetterCollection = function(selection){
         l.lettersCollection = l.alphabets.guninthalu;
     } else if(selection.value === 'vattulu'){
         l.lettersCollection = l.alphabets.vattulu;
+    } else if(selection.value === 'lowerLetters'){
+        l.lettersCollection = l.alphabets.lowerLetters;
     } else {
         l.lettersCollection = l.alphabets.english;    
     }
