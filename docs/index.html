@@ -12,16 +12,37 @@
     <script src="js/app/utils.js"></script>
     <script src="js/app/main.js"></script>
     <script src="js/app/gunintalu.js"></script>
+    <script src="js/app/aksharalu.js"></script>
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
 <div id="tabs" class="ui-widget">
 	<ul>
-		<li><a id="tab1" href="#tabs-1">అక్షరాలు గుర్తించు</a></li>
-		<li><a id="tab2" href="#tabs-2">గుణింతాలు</a></li>
+		<li><a id="tab1" href="#tabs-1">అక్షరాలు</a></li>
+		<li><a id="tab1" href="#tabs-2">అక్షరాలు గుర్తించు</a></li>
+		<li><a id="tab2" href="#tabs-3">గుణింతాలు</a></li>
 		<!-- <li><a id="tab3" href="#tabs-3">Third</a></li> -->
-	</ul>
-	<div id="tabs-1">
+    </ul>
+    <div id="tabs-1">
+        <div id="justLetters">
+            <h1 id="jLHeading"></h1>
+            <div style="font-size:100px;">
+                <!-- <span id="letter"></span> -->
+                <span id="jLetter" style="font-family: 'pothana', sans-serif;" ></span>
+            </div>
+            <div>
+                <button id="lPrev"style="font-size:19px" class="button ui-button ui-corner-all ui-widget">&nbsp;&nbsp;&lt;&nbsp;&nbsp;</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select class="selectmenu" id="lSelect" style="display: none;">
+                        <!-- <option selected="selected">English</option>
+                        <option>Telugu</option> -->
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="lNext" style="font-size: 19px" class="button ui-button ui-corner-all ui-widget">&nbsp;&nbsp;&gt;&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </div>
+	<div id="tabs-2">
         <div id="allLetters"> 
             <h1 id="heading"></h1>
             
@@ -35,7 +56,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="shuffle" style="font-size:26px" class="button ui-button ui-corner-all ui-widget">&nbsp;&nbsp;Shuffle&nbsp;&nbsp;</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select id="selectmenu" style="display: none;">
+                <select class="selectmenu" id="selectmenu" style="display: none;">
                         <!-- <option selected="selected">English</option>
                         <option>Telugu</option> -->
                     </select>
@@ -44,7 +65,7 @@
             </div>
         </div>
     </div>
-    <div id="tabs-2">
+    <div id="tabs-3">
             <h1 id="gHeading"><span id="selectedLetter"></span>&nbsp;&nbsp;గుణింతం</h1>
             <div style="font-size:100px;">
                 <!-- <span style="font-family: 'gura', sans-serif; font-size:100px;"> ్క Ñ</span> -->
@@ -55,7 +76,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="gShuffle" style="font-size:21px" class="button ui-button ui-corner-all ui-widget">&nbsp;&nbsp;కలుపు&nbsp;&nbsp;</button>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select id="gSelect" class="" ><!-- <option>Telugu</option> --></select>
+                <select id="gSelect" class="selectmenu" ><!-- <option>Telugu</option> --></select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button id="gNext" style="font-size:27px" class="button ui-button ui-corner-all ui-widget">&nbsp;&nbsp;&gt;&nbsp;&nbsp;</button>
             </div>
@@ -74,6 +95,9 @@
 
         var g = ramisoft.learn.g;
         u.init(g.viewInit);
+
+        var a = ramisoft.learn.a;
+        u.init(a.viewInit)
    });
 </script>
  <style>

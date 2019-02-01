@@ -83,6 +83,7 @@ g.movePre = function(sc) {
 
 g.viewInit= function(){
     $('.button').button();
+    $( ".selectmenu" ).selectmenu();
     
     g.seleGunintam = g.gunintalu[0];
     g.setHeading(g.selectedGLabel);
