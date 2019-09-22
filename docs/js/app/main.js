@@ -6,7 +6,7 @@ var l =  ramisoft.learn;
 var u = ramisoft.util;
 
 l.labels = [
-    {label :'అక్షరాలూ',value :'aksharalu'},
+    {label :'అక్షరాలు',value :'aksharalu'},
     {label :'గుణింతాలు', value :'gunintalu'},
     {label :'వొత్తులు', value : 'vattulu'},
     {label :'Lower Case', value : 'lowerLetters'},
