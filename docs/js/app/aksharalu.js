@@ -9,7 +9,7 @@ a.seek = 0;
                                                                                            
 
 a.labels = [
-    {label :'అక్షరాలూ',value :'aksharalu'},
+    {label :'అక్షరాలు',value :'aksharalu'},
     {label :'Lower Case', value : 'lowerLetters'},
     {label :'Upper Case', value : 'english'}
 ]
